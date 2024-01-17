@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import ObtenerTokenSpotify from '../../services/serviciosSpotify'
 import ObtenerCancionesTop, { obtenerCancionesTop } from '../../services/servicioCanciones'
-// import styleD from './Home.module.css'
+import styleD from './Home.module.css'
 import Canciones from './components/canciones/Canciones';
 import { obtenerArtistasTop } from '../../services/serviceArtistasVarios';
 import Artistas from './components/artistas/Artistas';
@@ -24,8 +24,8 @@ function Home(){
         .then(function(tokenrespuesta){
             obtenerCancionesTop(tokenrespuesta)
             .then(function(respuestaCanciones){
-                console.log("mira repuerca canciones*****");
-                console.log(respuestaCanciones)
+                // console.log("mira repuerca canciones*****");
+                // console.log(respuestaCanciones)
                 setCarga(false)
                 setCanciones(respuestaCanciones.tracks)
             })
@@ -57,12 +57,14 @@ function Home(){
     }
     return(
         <>
-            <Canciones canciones= {canciones} />
-
-            <hr />
-            <hr />
-
-            <Artistas artistas={artistas} />
+            <div >
+                <Canciones canciones= {canciones} /> 
+            </div>
+                
+            <div className={styleD.contenedor_home_artistas}>
+                <Artistas artistas={artistas} />
+            </div>
+                
 
 
         </>

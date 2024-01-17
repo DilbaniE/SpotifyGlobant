@@ -1,11 +1,11 @@
 
-export async function obtenerCancionesTop(token){
+export async function obtenerCancionesTop(tokenrespuesta){
 
     const URL_TOPTRACKS_SERVICE="https://api.spotify.com/v1/artists/1wGIhYkKWSq4yACtTkCkSX/top-tracks?market=us"
 
     const PETICON_CANCIONES={
         method:"GET",
-        headers:{"Authorization":token}
+        headers:{"Authorization":tokenrespuesta}
     }
 
 

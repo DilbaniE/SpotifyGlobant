@@ -14,7 +14,8 @@ export default function Canciones( { canciones } ) {
                 
             </section>
 
-            <div className="row row-cols-1 row-cols-md-5">
+
+            {/* <div className="row row-cols-1 row-cols-md-5">
                 {
                     canciones.map(function(cancion){
                         return(
@@ -29,7 +30,7 @@ export default function Canciones( { canciones } ) {
 
                     })
                 }
-            </div>
+            </div> */}
 
 </>
   )

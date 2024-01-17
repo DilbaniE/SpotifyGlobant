@@ -1,9 +1,11 @@
+
+
 async function ObtenerTokenSpotify(){
     const URL_TOPTRACKS_SERVICE="https://api.spotify.com/v1/artists/1wGIhYkKWSq4yACtTkCkSX/top-tracks?market=us"
 
     const PETICON_CANCIONES={
         method:"GET",
-        headers:{"Authorization":token}
+        // headers:{"Authorization":token}
     }
 
 
@@ -17,4 +19,4 @@ async function ObtenerTokenSpotify(){
 
 
 }
-export default obtenerArtistas
+export default ObtenerTokenSpotify

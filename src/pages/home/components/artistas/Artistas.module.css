@@ -1,3 +1,41 @@
 .container__artista{
-    color: blue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: dotted 7px rgb(118, 9, 86);
+    width: 100%;
+    
+    flex-wrap: wrap;
+}
+.card{
+border-radius: 10px;
+border: solid 2px rebeccapurple;
+margin: 5px;
+
+}
+
+.imagen{
+    width: 250px;
+    height: 250px;
+    border: dotted 3px gray;
+    border-radius: 50%;
+    
+}
+
+.icond{
+    display: flex;
+    flex-direction: column;
+    justify-content: first baseline;
+    border: solid 2px rgb(14, 102, 17);
+}
+.genre{
+    border: solid 2px rgb(14, 14, 102);
+}
+
+.icon{
+    width: 50px;
+    height: 50px;
+    border: solid 2px rgb(102, 14, 102);
+    display: flex;
+    justify-content: flex-end;
 }
