@@ -2,40 +2,70 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    border: dotted 7px rgb(118, 9, 86);
+    /* border: dotted 7px rgb(199, 17, 144); */
     width: 100%;
-    
+    color: white;
     flex-wrap: wrap;
 }
+
 .card{
 border-radius: 10px;
-border: solid 2px rebeccapurple;
 margin: 5px;
-
+background: #3C0753;
+height: 400px;
+width: 300px;
+/* border: solid 2px rgb(243, 112, 5);  */
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
 }
 
 .imagen{
-    width: 250px;
+    width: 300px;
     height: 250px;
-    border: dotted 3px gray;
     border-radius: 50%;
-    
+    padding: 0 20px;
+    /* border: solid 2px rgb(6, 230, 24);  */
 }
 
-.icond{
+.artis_text_padre{
+  padding: 0 10px;
+}
+
+.artis_texto{
+  /* border: solid 2px rgb(6, 230, 24);  */
+  margin: 0;
+  margin-bottom: 10px;
+ 
+}
+
+
+.icond {
     display: flex;
     flex-direction: column;
     justify-content: first baseline;
-    border: solid 2px rgb(14, 102, 17);
-}
-.genre{
-    border: solid 2px rgb(14, 14, 102);
-}
-
-.icon{
-    width: 50px;
-    height: 50px;
-    border: solid 2px rgb(102, 14, 102);
+    /* border: solid 2px rgb(14, 102, 17); */
+    position: relative;
+  }
+  
+  /* .icond__link {
+    border: solid 12px rgb(14, 37, 102);
+  } */
+  
+  .icon__play {
+    bottom: 9px;
+    right: 20px;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    /* border: solid 2px rgb(102, 14, 102); */
     display: flex;
     justify-content: flex-end;
-}
+    opacity: 0; /* Inicialmente oculto */
+    transition: opacity 0.3s; /* Agrega una transición suave */
+  }
+  
+  .icond:hover .icon__play {
+    opacity: 1; /* Muestra la imagen al pasar el ratón por encima de .icond */
+  }
+

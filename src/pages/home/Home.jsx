@@ -51,7 +51,6 @@ function Home(){
         return(
             <>
              <h1>Cargando....</h1>
-            
             </>
         )
     }

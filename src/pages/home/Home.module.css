@@ -1,15 +1,21 @@
-.banner{
+/* .banner{
     background-image: url('../../assets/banner.jpg');
     padding: 25%;
-}
+} */
 
-.container__home{
+/* .container__home{
     color: blue;
-}
+} */
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .contenedor_home_artistas{
-  border: solid 5px rgb(15, 158, 91);
+  /* border: solid 5px rgb(15, 158, 91); */
   display: flex;
+  background: #030637;
   flex-direction: column;
   justify-content: space-around;
   width: 100%;

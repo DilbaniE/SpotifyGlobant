@@ -64,7 +64,7 @@ export default function ManejoCanciones() {
         <div className={style.container__manejoCanciones}>
          ManejoCanciones mira el id: {spotify}
 
-
+                <h1 >ssssssssssssssss</h1>
          {
                     canciones.map(function(cancion){
                         return(
@@ -73,6 +73,10 @@ export default function ManejoCanciones() {
                                 <img src={cancion.album.images[0].url} alt={cancion.name} />
                                     <h3>{cancion.name}</h3>
                                     <audio src={cancion.preview_url} controls className='w-100'></audio>
+                                    {
+                                        console.log("CANCIONES", canciones)
+                                    }
+                                    
                                 </div>
                             </div>
                             );

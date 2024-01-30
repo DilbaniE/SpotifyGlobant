@@ -5,13 +5,12 @@ export default function Canciones( { canciones } ) {
   return (
 <>
 
-<h1 className={styleD.container__home}>Hola soy home</h1>
             <section className={styleD.banner}>
             
             </section>
 
             <section className={styleD.container}>
-                
+                <img className={styleD.gif} src='https://i.pinimg.com/originals/ec/8d/da/ec8dda885688ef35203135cc247e2259.gif' alt="" />
             </section>
 
 

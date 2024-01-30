@@ -1,6 +1,7 @@
 import React from 'react'
 import style from './Artistas.module.css'
 import { Link } from "react-router-dom";
+import iconplayD from '../../../../assets/playIcon.png'
 
 export default function Artistas( {artistas} ) {
 
@@ -28,28 +29,25 @@ export default function Artistas( {artistas} ) {
       <>
       <div>
         <div className='col'  key={cancion.id}>
-
-        <div className={style.card}>           
-         
-          <h3>{cancion.name}</h3>
+        <div className={style.card}>          
            {/* <p>{cancion.artists.followers.total}</p>  */}
+          
            <div className={style.icond}>
-                < Link to = { "/manejo/" + ultimoParametro  }>
+                < Link className={style.icond__link} to = { "/manejo/" + ultimoParametro  }>
                           <img src={cancion.images[0].url} className={style.imagen} alt="" /> 
                 </Link>
-                <img className={style.icon} src="https://img.icons8.com/nolan/64/E090F0/05BDF5/play-button-circled.png" alt="Icond Play" />
+                <img className={style.icon__play} src={iconplayD} alt="Icond Play" />
            </div>
-           <p  className={style.genre}> {cancion.genres[1]}</p>
-         
-
-
-
+           <div className={style.artis_text_padre}>
+              {/* <h6 className={style.artis_texto}>Artis</h6> */}
+              <h3 className={style.artis_texto}>{cancion.name}</h3>
+              <p  className={style.artis_texto}> {cancion.genres[1]}</p>
+              <p className={style.artis_texto}> Recomendado: {cancion.popularity}%</p>
+           </div>
+           
         </div>
         </div>
       </div>
-     
-      
-      
       </>
     );
   })
