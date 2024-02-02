@@ -1,3 +1,39 @@
-.container__header{
-    color: yellow;
+.head_padre{
+    display: flex;
+    height: 110px;
+    background-color: #020316;
+}
+
+.img{
+    width: 80px;
+    height: 80px;
+}
+
+.head_hijo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+    
+}
+.head_hijo h1{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 56px;
+    color: #2ff108;
+}
+
+.head_hijotwo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 30%;
+}
+
+.head_hijotwo button{
+    width: 150px;
+    height: 40px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: white;
+    background:rgb(126, 3, 138) ;
+    border-radius: 6px;
 }

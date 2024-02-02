@@ -12,6 +12,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.conten_canciones{
+  margin-bottom: -4px;
+}
 .contenedor_home_artistas{
   /* border: solid 5px rgb(15, 158, 91); */
   display: flex;

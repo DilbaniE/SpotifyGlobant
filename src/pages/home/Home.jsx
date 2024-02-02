@@ -56,16 +56,13 @@ function Home(){
     }
     return(
         <>
-            <div >
+            <div className={styleD.conten_canciones}>
                 <Canciones canciones= {canciones} /> 
             </div>
                 
             <div className={styleD.contenedor_home_artistas}>
                 <Artistas artistas={artistas} />
             </div>
-                
-
-
         </>
     )
 
